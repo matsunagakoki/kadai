@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"  />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+  
+
+.a {
+  color: #000;
+
+}
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 24px 64px;
+      background-color: #fff;
+      color: #000000;
+      text-align: center;
+    }
+    
+    .navbar-title {
+      margin: 0;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    
+    .navbar-menu {
+      display: flex;
+      align-items: center;
+ 
+    }
+    
+    .navbar-menu a {
+      color: #000000;
+      margin-left: 20px;
+      text-decoration: none;
+    }
+    
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+    }
+    
+    .card {
+      width: 300px;
+      margin-bottom: 0px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      flex-basis: 29.33%;
+         margin: 2% 2% 2% 2%;
+
+         border-bottom: 1px solid #000;
+         background-color: #f1f1f1;
+
+         position: relative;
+
+
+
+        }
+    
+.card a {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+
+}
+.card a:hover {
+  opacity: 0.1;
+    background-color: #a1a1a1;
+    
+}
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+    }
+    
+    .card-content {
+      padding: 20px;
+      align-items: center;
+      padding: 24px 32px;
+
+    }
+    
+    .card-title {
+      color: #1d1d1d;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+    }
+    
+    .card-description {
+      margin: 10px 0;
+      font-size: 14px;
+    }
+    
+    .navbar-hamburger {
+      display: none;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+
+      
+    .text{
+      margin: 4% 6%;
+      line-height: 1.3;
+      font-size: 14px;
+    }
+.h-large{
+align-self: stretch;
+margin: 20px auto 20px;
+font-size: 24px;
+
+}
+
+
+.profile{
+display: flex;
+padding: 17px 64px;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+gap: 10px;
+align-self: stretch;
+background: #434343;
+color: #fff;
+  
+}
+
+.profile-1{
+  color: #FFF;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+.footer{
+  display: flex;
+padding: 24px 64px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 36px;
+align-self: stretch; 
+}
+.footer-menu{
+display: flex;
+align-items: flex-start;
+gap: 80px;
+color: #000000;
+      margin-left: 20px;
+      text-decoration: none;
+}
+
+.footer-copyright{
+color: #000;
+font-family: Inter;
+font-size: 8px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+}
+
+
+
+      
+    
+    @media screen and (max-width: 480px) {
+      .navbar-menu {
+        display: none;
+      }
+      
+      .navbar-hamburger {
+        display: block;
+      }
+      .card{
+        flex-basis: 100%;
+      }
+      
+     
+    }
+  </style>
+
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById("menu");
+    menu.classList.toggle("active");
+}
+</script>
+
+
+</head>
+<body>
+
+  <div class="animate__animated animate__fadeIn"> 
+
+  <!-- ここからヘッダー -->
+
+  <div class="navbar">
+
+    <a harf="index.html"><h1 class="navbar-title">KOKI MATSUNAGA</h1></a>
+    <div class="navbar-menu">
+      <a href="kadai.html">Works</a>
+      <a href="aboutme.html">About Me</a>
+      <a href="contact.html">Contact</a>
+      <a href="skill.html">Skill</a>
+    </div>
+   
+
+    <div class="navbar-hamburger">&#9776;</div>
+  </div>
+  
+  <div class="profile">
+  <h1 class="h-large">私について</h1>
+  <div class="profile-1">
+  2004年 東京都に生まれる。高校時代から独学で始めた、写真をきっかけに、動画編集、ロゴデザイン、空間デザイン、Webデザインなどの、クリエイティブ業務を行なっています。
+  現在東京工芸大学の芸術学部 インタラクティブメディア学科に所属し、デジタルとフィジカルを融合した作品制作を軸に学びを深めています。このポートフォリオサイトでは、これまで作成した作品を中心に、「生い立ち」「ビジョン」など松永幸樹についてご覧いただけます。
+  </div>
+  </div>
+
+ <!-- ここからカード -->
+
+
+  <div class="card-container">
+
+    <div class="card">
+            <div class="card-content">
+        <h2 class="card-title">作品 - 空間デザイン</h2>
+        <div class="text">
+        <p class="card-description">これまで取り組んだ空間デザインのプロジェクトを中心に紹介しています。</p>
+      </div>
+      <a href="spacedesign.html"></a>
+
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-content">
+          <h2 class="card-title">作品 - 授業で作成</h2>
+        <div class="text">
+        <p class="card-description">Web演習で作成した作品を紹介しています</p>
+        </div>
+        <a href="kadai.html"></a>
+
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-content">
+        <h2 class="card-title">作品 - 写真映像作品</h2>
+        <div class="text">
+        <p class="card-description">趣味で撮影している写真やこれまでに作成した映像作品などカメラで表現した作品を紹介しています</p>
+        </div>
+        <a href="camera.html"></a>
+
+      </div>
+      </div>
+
+
+      <div class="card">
+        <div class="card-content">
+          <h2 class="card-title">保有スキル</h2>
+          <div class="text">
+          <p class="card-description">これまで様々なプロジェクトに参加する中で得たスキルを紹介しています。</p>
+          </div>
+          <a href="skill.html"></a>
+
+        </div>
+        </div>  
+
+        <div class="card">
+          <div class="card-content">
+            <h2 class="card-title">生い立ち</h2>
+            <div class="text">
+            <p class="card-description">私がどのような経験を経て現在に至るかを紹介しています</p>
+            </div>
+            <a href="aboutme.html"></a>
+
+          </div>
+          </div>  
+
+        <div class="card">
+          <div class="card-content">
+             <h2 class="card-title">コンタクト</h2>
+             <div class="text">
+             <p class="card-description">連絡先情報、SNSの情報をまとめています</p>
+             </div>
+             <a href="contact.html"></a>
+
+            </div>
+            </div>  
+
+      </div>
+ <!-- カードおしまい -->
+
+ <div class="footer">
+
+  
+
+  <div class="footer-copyright">
+    <p>©︎Koki Matsunaga 2023 </p>
+</div>
+
+
+      
+      <script async defer src="https://scripts.withcabin.com/hello.js"></script>
+
+    </body>
+
